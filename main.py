@@ -405,6 +405,7 @@ async def on_message(message):
         await message.delete()
     if message.guild == None and   message.author.name!='player':
            P=1
+keep_alive()
 my_secret = os.environ['TOKEN1']
 client.run(my_secret)
-keep_alive()
+
