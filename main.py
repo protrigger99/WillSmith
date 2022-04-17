@@ -1,6 +1,7 @@
 import discord
 import random
 import os
+from keep_alive import keep_alive
 client = discord.Client( )
 d=False
 d1=False
@@ -406,3 +407,4 @@ async def on_message(message):
            P=1
 my_secret = os.environ['TOKEN1']
 client.run(my_secret)
+keep_alive()
